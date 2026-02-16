@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You – Language Whispers</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Body & Gradient Background */
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #FFD700, #FFB347, #FF6B6B);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  text-align: center;
+  color: #000;
+}
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Glass Container */
+.glass {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+.logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #FFD700;
+  margin: 0 auto 15px auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Headline */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* Social Links */
+.social {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 5px auto;
+  padding: 10px 0;
+  border-radius: 10px;
+  background: #FFD700;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.social:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255,215,0,0.4);
+}
+
+/* Footer */
+footer {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .logo { width: 100px; height: 100px; }
+  h1 { font-size: 28px; }
+  p { font-size: 14px; }
+}
+</style>
+</head>
+
+<body>
+<div class="glass">
+  <!-- Logo -->
+  <img src="logo.png" alt="Language Whispers Logo" class="logo">
+
+  <!-- Headline -->
+  <h1>Thank You for Registering!</h1>
+
+  <!-- Message -->
+  <p>We’re excited to have you join <strong>Language Whispers</strong>.</p>
+  <p>Whispers today, speak loud tomorrow. Your journey to learning Turkish and exploring languages has just begun!</p>
+  
+  <!-- Coming App -->
+  <p><strong>Coming Soon: Our Mobile App!</strong></p>
+
+  <!-- Social Media -->
+  <a href="https://www.youtube.com/@language_Whispers" target="_blank" class="social">📺 YouTube @language_whispers</a>
+  <a href="https://t.me/language_whispers1" target="_blank" class="social">💬 Telegram @language_whispers1</a>
+  <a href="https://www.tiktok.com/@language_whispers1" target="_blank" class="social">🎵 TikTok @language_whispers1</a>
+
+  <footer>Join our community and keep learning every day!</footer>
+</div>
+</body>
+</html>

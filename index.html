@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Language Whispers – Free Turkish Lessons</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Body & Gradient Background */
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #FFD700, #FFB347, #FF6B6B);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: #000;
+  overflow-x: hidden;
+  text-align: center;
+}
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Glass Container */
+.glass {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #FFD700;
+  margin: 0 auto 15px auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Headline */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.description {
+  font-size: 14px;
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs & Button */
+form input, form select {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  background: rgba(255,215,0,0.25);
+  color: #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #FFD700;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Social Links */
+.social {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 5px auto;
+  padding: 10px 0;
+  border-radius: 10px;
+  background: #FFD700;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.social:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Footer & App Coming */
+footer {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #000;
+}
+.app-coming {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FF0000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .logo { width: 100px; height: 100px; }
+  h1 { font-size: 24px; }
+  .tagline { font-size: 16px; }
+  .description { font-size: 13px; }
+  form input, form select, form button { font-size: 14px; }
+}
+</style>
+</head>
+<body>
+<div class="glass">
+  <!-- Logo -->
+  <img src="logo.png" alt="Language Whispers Logo" class="logo">
+
+  <!-- Headline & Tagline -->
+  <h1>Welcome to Language Whispers</h1>
+  <p class="tagline">Whispers today, speak loud tomorrow</p>
+
+  <!-- Description -->
+  <p class="description">
+    Language Whispers is a platform that teaches Turkish as the root language and gives you the chance to join a community learning experience. Gain skills, confidence, and explore more languages.
+  </p>
+
+  <!-- Registration Form -->
+  <form action="https://formsubmit.co/languagewhispers@gmail.com" method="POST">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <select name="Level" required>
+      <option disabled selected>Select Your Level</option>
+      <option>Beginner</option>
+      <option>I know basic words</option>
+      <option>Intermediate</option>
+    </select>
+    <!-- Redirect to thank-you page -->
+    <input type="hidden" name="_next" value="https://language-whispers.vercel.app/thank-you.html">
+    <button type="submit">Register Now</button>
+  </form>
+
+  <!-- Social Media -->
+  <a href="https://www.youtube.com/@language_Whispers" target="_blank" class="social">📺 YouTube @language_whispers</a>
+  <a href="https://t.me/language_whispers1" target="_blank" class="social">💬 Telegram @language_whispers1</a>
+  <a href="https://www.tiktok.com/@language_whispers1" target="_blank" class="social">🎵 TikTok @language_whispers1</a>
+
+  <!-- Footer & App -->
+  <footer>Join our community and start your learning journey today!</footer>
+  <p class="app-coming">📱 App coming soon!</p>
+</div>
+</body>
+</html>
